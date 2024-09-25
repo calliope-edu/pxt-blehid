@@ -342,7 +342,7 @@ void HIDService::setName() {
     // set fixed gap name
     // Name has to be <= 12 chars (to fit Adv packet)  
     //  Maybe:  "mcrobt XXXXX"   or "uBit [XXXXX]"   
-    int len = sprintf(gapName, "uBit [%s]", microbit_friendly_name());
+    int len = sprintf(gapName, "mini [%s]", microbit_friendly_name());
     ble_gap_conn_sec_mode_t permissions;
     BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS( &permissions);
     MICROBIT_BLE_ECHK( sd_ble_gap_device_name_set( &permissions, (uint8_t *)gapName, len) );
