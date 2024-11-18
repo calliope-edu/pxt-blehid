@@ -1,5 +1,5 @@
 {
-    "name": "microbit-pxt-blehid - Copy",
+    "name": "BLE HID Control",
     "version": "0.1.0",
     "description": "BLE HID Support",
     "license": "MIT",
