@@ -486,6 +486,7 @@ Verschiedene Links & Referenzen
 
 ## Supported targets
 for PXT/microbit
+
 for PXT/calliopemini
 
 <script src="https://makecode.com/gh-pages-embed.js"></script>
