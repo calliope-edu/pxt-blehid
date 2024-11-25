@@ -30,9 +30,11 @@ class Key {
 //% color=#0000FF 
 //% icon="\uf11c"
 //% block="Keyboard"
+//% block.loc.de="Tastatur"
 namespace keyboard {
 
     //% blockId="keyboard service" block="bluetooth keyboard service"
+    //% block.loc.de="Bluetooth-Tastatur-Dienst"
     //% shim=keyboard::startKeyboardService
     //% weight=50
     export function startKeyboardService() : void {
@@ -40,6 +42,7 @@ namespace keyboard {
     }
 
     //% blockId="send string" block="send keys | $keys" 
+    //% block.loc.de="Tasten senden | $keys"
     //% shim=keyboard::sendString
     //% weight=40
     export function sendString(keys: string) : void {
@@ -47,6 +50,7 @@ namespace keyboard {
     }
 
     //% blockID="keyboard on status change" block="on keyboard status change" advanced=true
+    //% block.loc.de="bei Änderung des Tastaturstatus"
     //% shim=keyboard::setStatusChangeHandler 
     //% weight=20
     export function setStatusChangeHandler(a: Action) {
@@ -54,6 +58,7 @@ namespace keyboard {
     }
 
     //% blockId="keyboard enabled" block="keyboard enabled" advanced=true
+    //% block.loc.de="Tastatur aktiviert"
     //% shim=keyboard::isEnabled
     //% weight=10
      export function isEnabled() : boolean {
@@ -62,32 +67,45 @@ namespace keyboard {
 
     export enum _Modifier {
         //% block="control+"
+        //% block.loc.de="Control+"
         control, 
         //% block="shift+"
+        //% block.loc.de="Shift+"
         shift, 
         //% block="alt+"
+        //% block.loc.de="Alt+"
         alt, 
         //% block="option+"
+        //% block.loc.de="Option+"
         option,
         //% block="command+"
+        //% block.loc.de="Command+"
         apple, 
         //% block="windows+"
+        //% block.loc.de="Windows+"
         windows, 
         //% block="right control+"
+        //% block.loc.de="rechts Control"
         rightControl, 
         //% block="right shift+"
+        //% block.loc.de="rechts Schift+"
         rightShift, 
         //% block="right alt+"
+        //% block.loc.de="rechts Alt+"
         rightAlt, 
         //% block="right option+"
+        //% block.loc.de="rechts Option+"
         rightOption, 
         //% block="right apple+"
+        //% block.loc.de="rechts Apple+"
         rightApple, 
         //% block="right windows+"
+        //% block.loc.de="rechts Windows+"
         rightWindows,
     }
 
     //% blockId="modifiers" block="%key"
+    //% block.loc.de="%key"
     //% weight=30
     export function modifiers(key : _Modifier) : string {
         let mods = [
@@ -119,12 +137,15 @@ namespace keyboard {
         left,
         right,
         //% block="volume up"
+        //% block.loc.de="Lautstärke hoch"
         vol_up,
         //% block="volume down"
+        //% block.loc.de="Lautstärke runter"
         vol_down,
     }
 
     //% blockId="key_conv" block="%key"
+    //% block.loc.de="%key"
     //% weight=20
     export function keys(key : _Key) : string {
         let keys = [
@@ -145,6 +166,7 @@ namespace keyboard {
     }
 
     //% block="raw scancode | %code" advanced=true
+    //% block.loc.de="roher Scancode | %code"
     //% code.min=0 code.max=255
     //% weight=30
     export function rawScancode(code: number) {
@@ -152,6 +174,7 @@ namespace keyboard {
     }
 
     //% blockId="send simultaneous keys" block="send simultaneous keys $keys || hold keys $hold" advanced=true
+    //% block.loc.de="Gleichzeitige Tasten senden $keys || Tasten halten $hold"
     //% shim=keyboard::sendSimultaneousKeys
     //% weight=50
     export function sendSimultaneousKeys(keys: string, hold: boolean) : void {
@@ -159,13 +182,15 @@ namespace keyboard {
     }
 
     //% blockId="release keys" block="release keys" advanced=true
+    //% block.loc.de="Tasten freigeben"
     //% shim=keyboard::releaseKeys
     //% weight=40
     export function releaseKeys() : void {
         return
     }
 
-    //% block="set events per second | %rate keys/s" advanced=true
+    //% block="Ereignisse pro Sekunde einstellen | %rate keys/s" advanced=true
+    //% block.loc.de="Tasten freigeben"
     //% rate.min=5 rate.max=165 rate.defl=100
     //% shim=keyboard::setEventsPerSecond
     //% weight=50
