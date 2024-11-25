@@ -14,9 +14,11 @@ class MediaKey {
 //% color=#ff00FF 
 //% icon="\uf04b"
 //% block="Media"
+//% block.loc.de="Medien"
 namespace media {
 
     //% blockId="media service" block="bluetooth media service"
+    //% block.loc.de="Bluetooth-Medien-Dienst"
     //% shim=media::startMediaService
     //% weight=50
     export function startMediaService() : void {
@@ -24,6 +26,7 @@ namespace media {
     }
 
     //% blockId="send code" block="send code | $code" 
+    //% block.loc.de="Code senden | $code"
     //% code.shadow="mediakey_conv"
     //% shim=media::sendCode
     //% weight=40
@@ -32,6 +35,7 @@ namespace media {
     }
 
     //% blockID="media on status change" block="on media status change" advanced=true
+    //% block.loc.de="bei Änderung des Medienzustands"
     //% shim=media::setStatusChangeHandler 
     //% weight=20
     export function setStatusChangeHandler(a: Action) {
@@ -39,6 +43,7 @@ namespace media {
     }
 
     //% blockId="media enabled" block="media enabled" advanced=true
+    //% block.loc.de="Medien aktiviert"
     //% shim=media::isEnabled
     //% weight=10
      export function isEnabled() : boolean {
@@ -50,16 +55,20 @@ namespace media {
         previous, 
         stop, 
         eject, 
-        //% block="play/pause"        
+        //% block="play/pause"
+        //% block.loc.de="Start/Stopp"
         playPause,
         mute,
         //% block="volume up"
+        //% block.loc.de="Lautstärke hoch"
         vol_up,
         //% block="volume down"
+        //% block.loc.de="Lautstärke herunter"
         vol_down,
     }
 
     //% blockId="mediakey_conv" block="%key"
+    //% block.loc.de="%key"
     //% weight=20
     export function keys(key : _MediaKey) : number {
         let keys = [
