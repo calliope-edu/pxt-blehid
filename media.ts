@@ -64,7 +64,7 @@ namespace media {
         //% block.loc.de="auswerfen"
         eject, 
         //% block="play/pause"
-        //% block.loc.de="Start/Stopp"
+        //% block.loc.de="Start/Stop"
         playPause,
         mute,
         //% block="volume up"
