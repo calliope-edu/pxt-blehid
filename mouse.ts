@@ -26,7 +26,7 @@ namespace mouse {
     }
 
     //% blockId="mouse click" block="click mouse"
-    //% block.loc.de="click mouse"
+    //% block.loc.de="klicke Maus"
     //% weight=30
     export function click() : void { 
         _send(0, 0, 0, 0x1);  
