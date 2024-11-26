@@ -1,5 +1,7 @@
 
 enum GameButton {
+    //% block="none"
+    //% block.loc.de="keiner"
     none = 0,
     A = 1<<0,
     B = 1<<1,
@@ -11,8 +13,14 @@ enum GameButton {
     //% block="right shoulder"
     //% block.loc.de="Taste rechts oben"    
     rightShoulder = 1<<7,
+    //% block="back"
+    //% block.loc.de="zurück"
     back = 1<<10,
+    //% block="start"
+    //% block.loc.de="Start"
     start = 1<<11,
+    //% block="guide"
+    //% block.loc.de="zum Start"
     guide = 1<<12,
     //% block="left stick"
     //% block.loc.de="linker Joystick"
