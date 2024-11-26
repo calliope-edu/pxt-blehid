@@ -128,13 +128,29 @@ namespace keyboard {
     }
 
     export enum _Key {
+        //% block="enter"
+        //% block.loc.de="Enter"
         enter,
+        //% block="escape"
+        //% block.loc.de="Escape"
         escape,
+        //% block="delete"
+        //% block.loc.de="Löschen"
         delete,
+        //% block="tab"
+        //% block.loc.de="Tab"
         tab,
+        //% block="up"
+        //% block.loc.de="hoch"
         up, 
+        //% block="down"
+        //% block.loc.de="runter"
         down,
+        //% block="left"
+        //% block.loc.de="links"
         left,
+        //% block="right"
+        //% block.loc.de="rechts"
         right,
         //% block="volume up"
         //% block.loc.de="Lautstärke hoch"
