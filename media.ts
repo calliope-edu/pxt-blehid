@@ -51,9 +51,17 @@ namespace media {
     }
 
     export enum _MediaKey {
+        //% block="next"
+        //% block.loc.de="weiter"
         next, 
+        //% block="previous"
+        //% block.loc.de="zurück"
         previous, 
-        stop, 
+        //% block="stop"
+        //% block.loc.de="Stop"
+        stop,
+        //% block="eject"
+        //% block.loc.de="auswerfen"
         eject, 
         //% block="play/pause"
         //% block.loc.de="Start/Stopp"
