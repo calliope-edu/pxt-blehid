@@ -66,6 +66,8 @@ namespace media {
         //% block="play/pause"
         //% block.loc.de="Start/Stop"
         playPause,
+        //% block="mute"
+        //% block.loc.de="stummschalten"
         mute,
         //% block="volume up"
         //% block.loc.de="Lautstärke hoch"
